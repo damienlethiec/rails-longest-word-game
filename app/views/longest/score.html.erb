@@ -1,0 +1,16 @@
+<h1>******** Now your result ********</h1>
+
+<!-- result = run_game(attempt, grid, start_time, end_time) -->
+
+<p>Your word: <%=  @answer %></p>
+<p>Time: <%=  @time %></p>
+<p>Translation: <%=  @translation %></p>
+<p>Your score: <%= @score %></p>
+<p>Message: <%= @message %></p>
+
+<h3>*****************************************************</h3>
+
+<p> Number of games : <%= session[:attempts] %></p>
+<p> Average session score : <%= @average %> </p>
+
+<%= link_to "Replay", game_path %>
